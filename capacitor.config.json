@@ -1,0 +1,8 @@
+{
+  "appId": "io.beatbarn.app",
+  "appName": "BeatBarn",
+  "webDir": "dist",
+  "server": {
+    "androidScheme": "https"
+  }
+}
