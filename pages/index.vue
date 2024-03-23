@@ -100,7 +100,7 @@ const uploadAudio = async (e: Event) => {
 </script>
 
 <template>
-  <div>
+  <div class="wrapper">
     <h1 v-if="activeAudioFileHash">Home</h1>
     <input @change="uploadAudio" ref="itemUpload" type="file" />
     <audio @timeupdate="updateTime" ref="activeAudioElem" controls />
@@ -109,5 +109,13 @@ const uploadAudio = async (e: Event) => {
 </template>
 
 <style scoped>
-
+.wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: #f0f0f0;
+}
 </style>
